@@ -1,0 +1,40 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="512" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0066CC"/>
+      <stop offset="1" stop-color="#003366"/>
+    </linearGradient>
+    <clipPath id="pinClip">
+       <path d="M256 50C160 50 82 128 82 224C82 320 256 462 256 462C256 462 430 320 430 224C430 128 352 50 256 50Z" />
+    </clipPath>
+  </defs>
+  <!-- Background Container for App Icon -->
+  <rect width="512" height="512" rx="128" fill="url(#bgGrad)"/>
+  
+  <!-- Outer Glow/Ring -->
+  <path d="M256 45C155 45 72 127 72 228C72 329 256 477 256 477S440 329 440 228C440 127 357 45 256 45Z" fill="white" opacity="0.2"/>
+
+  <!-- Main White Frame -->
+  <path d="M256 60C165 60 92 133 92 224C92 315 256 448 256 448S420 315 420 224C420 133 347 60 256 60Z" fill="white"/>
+  
+  <!-- Internal Content (Mountains + Star) -->
+  <g clip-path="url(#pinClip)">
+    <!-- Top Sky/Mountain Background -->
+    <rect x="0" y="0" width="512" height="235" fill="#3B82F6"/>
+    <!-- Bottom Shield Background -->
+    <rect x="0" y="235" width="512" height="300" fill="#001F3F"/>
+    
+    <!-- Mountain Peaks -->
+    <path d="M120 235L190 120L240 180L300 100L380 235H120Z" fill="white" />
+    <path d="M190 120L210 150L180 160L190 120Z" fill="#93C5FD" />
+    <path d="M300 100L330 140L290 155L300 100Z" fill="#93C5FD" />
+    
+    <!-- Central Star -->
+    <path d="M256 270L266 295H294L271 310L280 335L256 320L232 335L241 310L218 295H246L256 270Z" fill="white" />
+    
+    <!-- Stylized W/Shield Marks -->
+    <path d="M220 355H292V362H220V355Z" fill="white" opacity="0.8"/>
+    <path d="M220 370H292V377H220V370Z" fill="white" opacity="0.8"/>
+    <path d="M220 385H292V392H220V385Z" fill="white" opacity="0.8"/>
+  </g>
+</svg>
